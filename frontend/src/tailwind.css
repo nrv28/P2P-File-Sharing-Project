@@ -1,0 +1,36 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .transform-none {
+    transform: none;
+  }
+  
+  .transition-transform {
+    transition: transform 1s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slideIn 3s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0
+    }}  
